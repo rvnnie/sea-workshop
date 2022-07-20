@@ -8,8 +8,13 @@ or something similar. Casing does not matter as long as you reference it exactly
 ## Usage
 Simply call the read function of env.c and store it in a Map * like so:
 ```
-Map *my_env_variables = read()
+Map *my_env_variables = read();
 ```
 This will fetch the environment variables in the current directory.
+
+You can then reference the env variables with findMap
+```
+char *an_environment_variable = findMap(my_environment_variables, "PASSWORD");
+```
 
 Some TODOS: Update the read method to have a file path include and then just call the file open function from within.
