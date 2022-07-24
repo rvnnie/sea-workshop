@@ -1,3 +1,4 @@
 # ignore .env file
 .env
 a.out
+.DS_Store

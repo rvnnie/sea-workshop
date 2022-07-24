@@ -8,7 +8,7 @@
 // TODO have a check for multiple references and throw an error
 // TODO Incorporate a JSON interpreter
 
-#include "map.c"
+#include "./../lib/map.c"
 
 // Gets the line length of a file
 size_t linelen(FILE *file) {
